@@ -13,45 +13,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <style>
         @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
-    @media screen and (max-width: 500px) {
-        .mobile-container {
-            display: block;
+    @media (max-width: 600px) {
+        .mobile-container .topnav {
+            width: 100%;
         }
         .btn {
             width: calc(100vw - 100px);
         }
         .center {
             font-size: medium;
-        }
-        #guide {
-            width: calc(100%);
-        }
-    }
-
-    @media screen and (min-width: 500px) {
-        main {
-            margin: -1px 20px 20px 20px;
-        }
-        .btn {
-            margin: 10px 5px;
-        }
-        .mobile-container {
-            display: block;
-        }
-        #guide {
             width: 100%;
         }
-    }
-
-    @media screen and (min-width: 500px) and (max-width: 1200px) {
         main {
-            margin: 20px;
+            width: 100%;
         }
     }
 
     html {
         height: 100%;
-        font-family: Pretendard;
+        font-family: Pretendard, sans-serif;
     }
 
     body {
@@ -64,6 +44,10 @@
 
     .center {
         text-align: center;
+    }
+
+    #guide {
+        width: calc(100%);
     }
 
     .mobile-container {
@@ -86,7 +70,6 @@
         overflow: hidden;
         background-color: white;
         position: relative;
-        border-radius: 10px;
         text-align: center;
     }
 
@@ -153,12 +136,6 @@
         color: #343a40;
     }
 
-    .btn-primary {
-        background-color: #0074bf;
-        border: 1px solid #0074bf;
-        color: white;
-    }
-
     #header-logo {
         display: inline-block;
         width: 40px;
@@ -172,7 +149,6 @@
         width: 100%;
         text-align: center;
         margin-top: 40px;
-        margin-bottom: 40px;
     }
     footer {
         text-align: center;
@@ -184,7 +160,6 @@
 <body class="bg">
     <div class="mobile-container">
         <div class="topnav">
-            <a href="home.html" class="active"><i class="fa fa-home"></i></a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
@@ -193,20 +168,18 @@
                 <a href="strmcalc.html">현재 스밍횟수는?</a>
                 <a href="meloncash.html">멜론 캐시 충전</a>
                 <a href="strmcard.html">멜론 스밍카드</a>
-                <a href="https://www.youtube.com/watch?v=oIA4bmyJu0M" class="story" style="text-decoration: none;">1999 M/V</a>
                 <a href="strmguide.html">음원 스트리밍 가이드</a>
-                <a href="downloadguide.html">음원 다운로드 가이드</a>
-                <a href="dualstrmguide.html">동시 스트리밍 가이드</a>
+                <a href="dwldguide.html">음원 다운로드 가이드</a>
                 <a href="mvstrm.html">뮤비 스트리밍 가이드</a>
                 <a href="mvdwld.html">뮤비 다운로드 가이드</a>
-                <a href="melongift.html">멜론 선물하기 가이드</a>
-                <a href="muteguide.html">음소거 스밍 방지 가이드</a>
-                <a href="laggingguide.html">끊김 방지 가이드</a>
+                <a href="melgift.html">멜론 선물하기 가이드</a>
+                <a href="strmhelp.html">스트리밍 헬프 가이드</a>
                 <a href="idcreate.html">아이디 생성 가이드</a>
                 <a href="voteguide.html">음악방송 투표 가이드</a>
-                <a href="voteschedule.html">음악 방송별 차트 집계 비율</a>
-                <a href="radioguide.html">라디오 신청 가이드</a>
-                <a href="intstrmguide.html">해외 스트리밍 가이드</a>
+                <a href="intstrm.html">해외 스트리밍 가이드</a>
+                <a href="radiombc.html">MBC 라디오 신청 가이드</a>
+                <a href="radiosbs.html">SBS 라디오 신청 가이드</a>
+                <a href="radiokbs.html">KBS 라디오 신청 가이드</a>
             </div>
         </div>
     </div>
@@ -227,36 +200,31 @@
             <a class="btn btn-white" href="#dual" style="width: auto;">듀얼넘버</a>
         </div>
         <div class="guide" id="melon">
-            <h2>멜론 아이디 생성 가이드</h2>
             <img src="./img/idcreate_melon.jpeg" alt="멜론 아이디 생성 가이드" id="guide">
         </div>
         <div class="guide" id="genie">
-            <h2>지니 아이디 생성 가이드</h2>
             <img src="./img/idcreate_genie.jpeg" alt="지니 아이디 생성 가이드" id="guide">
         </div>
         <div class="guide" id="flo">
-            <h2>플로 아이디 생성 가이드</h2>
             <img src="./img/idcreate_flo.jpeg" alt="플로 아이디 생성 가이드" id="guide">
         </div>
         <div class="guide" id="bugs">
-            <h2>벅스 아이디 생성 가이드</h2>
             <img src="./img/idcreate_bugs.jpg" alt="벅스 아이디 생성 가이드" id="guide">
         </div>
         <div class="guide" id="vibe">
-            <h2>바이브 아이디 생성 가이드</h2>
             <img src="./img/idcreate_vibe.jpeg" alt="바이브 아이디 생성 가이드" id="guide">
         </div>
         <div class="guide" id="kakao">
-            <h2>카카오뮤직 아이디 생성 가이드</h2>
             <img src="./img/idcreate_kakao.jpeg" alt="카카오뮤직 아이디 생성 가이드" id="guide">
         </div>
         <div class="guide" id="dual">
-            <h2>듀얼넘버 아이디 생성 가이드</h2>
             <img src="." alt="듀얼번호 아이디 생성 가이드" id="guide">
         </div>
     </main>
     <footer>
-        <img src="./logo.png" alt="logo" id="header-logo">
+        <a href="./home.html">
+            <img src="logo.png" alt="logo" id="header-logo">
+        </a>
     </footer>
 </body>
 </html>

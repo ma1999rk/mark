@@ -18,7 +18,6 @@
             min-height: 100vh;
             padding: 20px;
             box-sizing: border-box;
-            overflow-y: auto;
             padding-top: 3rem;
         }
         .profile-container {
@@ -88,7 +87,6 @@
             display: flex;
             gap: 10px;
             margin-top: 40px;
-            margin-bottom: 20px;
             flex-wrap: wrap;
             justify-content: center;
         }
@@ -155,16 +153,31 @@
         }
         @media (max-width: 600px) {
             .profile {
-                flex-direction: column;
                 align-items: center;
             }
             .stats {
-                flex-direction: column;
                 align-items: center;
             }
             .posts {
-                width: 90%;
+                width: 100%;
                 max-width: none;
+            }
+            .stories {
+                gap: 0px;
+                margin-top: 10px;
+                margin-bottom: 0px;
+                flex-wrap: nowrap;
+                width: 100%;
+            }
+            .story {
+                width: 90px;
+            }
+            .story img {
+                width: 50px;
+                height: 50px;
+            }
+            .story p {
+                font-size: 10px;
             }
         }
     </style>
@@ -177,8 +190,8 @@
                 <div style="display: flex; gap: 20px;">
                     <a href="https://x.com/MARKLEE_STRM" target="_blank" class="profile-name" style="text-decoration: none; color: white;">mark_strm__team___</a>
                     <div class="buttons">
-                        <a href="#" class="button">ENGLISH</a>
-                        <a href="#" class="button">?</a>
+                        <a href="https://x.com/MARKSTRM_EVENT" class="button">EVENT</a>
+                        <a href="https://x.com/MARKSTRM_CHART" class="button">CHART</a>
                     </div>
                 </div>
                 <div class="stats">
@@ -194,21 +207,21 @@
             <a href="./strmcalc.html" class="story" style="text-decoration: none;"><img src="./2.jpeg" alt="Story"><p style="margin-top: 10px;">현재 스밍횟수</p></a>
             <a href="./meloncash.html" class="story" style="text-decoration: none;"><img src="./3.png" alt="Story"><p style="margin-top: 10px;">멜론 캐시 충전</p></a>
             <a href="./strmcard.html" class="story" style="text-decoration: none;"><img src="./4.png" alt="Story"><p style="margin-top: 10px;">멜론 스밍카드</p></a>
-            <a href="https://www.youtube.com/watch?v=oIA4bmyJu0M" class="story" style="text-decoration: none;"><img src="./5.png" alt="Story"><p style="margin-top: 10px;">1999</p></a>
+            <a href="https://www.youtube.com/watch?v=nhBko4rIwtQ" class="story" style="text-decoration: none;"><img src="./5.png" alt="Story"><p style="margin-top: 10px;">1999</p></a>
         </div>
         <div class="posts">
-            <a href="https://example.com/story1" class="post" alt="음원 스트리밍 가이드"><img src="./a.png" alt="Post"><div class="overlay" style="font-weight: bold; gap: 10px;"><div>♥ 830K</div><div><i class="fa-solid fa-comment" style="color: #ffffff;"></i> 12.4K</div></div></a>
-            <a href="https://example.com/story1" class="post" alt="음원 다운로드 가이드"><img src="./b.png" alt="Post"><div class="overlay" style="font-weight: bold; gap: 10px;"><div>♥ 830K</div><div><i class="fa-solid fa-comment" style="color: #ffffff;"></i> 12.4K</div></div></a>
-            <a href="https://example.com/story1" class="post" alt="뮤비 스트리밍 가이드"><img src="./c.png" alt="Post"><div class="overlay" style="font-weight: bold; gap: 10px;"><div>♥ 830K</div><div><i class="fa-solid fa-comment" style="color: #ffffff;"></i> 12.4K</div></div></a>
-            <a href="https://example.com/story1" class="post" alt="뮤비 다운로드 가이드"><img src="./d.png" alt="Post"><div class="overlay" style="font-weight: bold; gap: 10px;"><div>♥ 830K</div><div><i class="fa-solid fa-comment" style="color: #ffffff;"></i> 12.4K</div></div></a>
-            <a href="https://example.com/story1" class="post" alt="멜론 선물하기 가이드"><img src="./e.png" alt="Post"><div class="overlay" style="font-weight: bold; gap: 10px;"><div>♥ 830K</div><div><i class="fa-solid fa-comment" style="color: #ffffff;"></i> 12.4K</div></div></a>
-            <a href="https://example.com/story1" class="post" alt="스트리밍 헬프 가이드"><img src="./f.png" alt="Post"><div class="overlay" style="font-weight: bold; gap: 10px;"><div>♥ 830K</div><div><i class="fa-solid fa-comment" style="color: #ffffff;"></i> 12.4K</div></div></a>
-            <a href="./idcreate.html" class="post" alt="아이디 생성 가이드"><img src="./g.png" alt="Post"><div class="overlay" style="font-weight: bold; gap: 10px;"><div>♥ 830K</div><div><i class="fa-solid fa-comment" style="color: #ffffff;"></i> 12.4K</div></div></a>
-            <a href="https://example.com/story1" class="post" alt="음악방송 투표 가이드"><img src="./h.png" alt="Post"><div class="overlay" style="font-weight: bold; gap: 10px;"><div>♥ 830K</div><div><i class="fa-solid fa-comment" style="color: #ffffff;"></i> 12.4K</div></div></a>
-            <a href="https://example.com/story1" class="post" alt="해외 스트리밍 가이드"><img src="./l.png" alt="Post"><div class="overlay" style="font-weight: bold; gap: 10px;"><div>♥ 830K</div><div><i class="fa-solid fa-comment" style="color: #ffffff;"></i> 12.4K</div></div></a>
-            <a href="https://example.com/story1" class="post" alt="MBC 라디오 신청 가이드"><img src="./i.png" alt="Post"><div class="overlay" style="font-weight: bold; gap: 10px;"><div>♥ 830K</div><div><i class="fa-solid fa-comment" style="color: #ffffff;"></i> 12.4K</div></div></a>
-            <a href="https://example.com/story1" class="post" alt="SBS 라디오 신청 가이드"><img src="./j.png" alt="Post"><div class="overlay" style="font-weight: bold; gap: 10px;"><div>♥ 830K</div><div><i class="fa-solid fa-comment" style="color: #ffffff;"></i> 12.4K</div></div></a>
-            <a href="https://example.com/story1" class="post" alt="KBS 라디오 신청 가이드"><img src="./k.png" alt="Post"><div class="overlay" style="font-weight: bold; gap: 10px;"><div>♥ 830K</div><div><i class="fa-solid fa-comment" style="color: #ffffff;"></i> 12.4K</div></div></a>
+            <a href="./strmguide.html" class="post" alt="음원 스트리밍 가이드"><img src="./a.png" alt="Post"><div class="overlay" style="font-weight: bold; gap: 10px;"><div>♥ 82M</div><div><i class="fa-solid fa-comment" style="color: #ffffff;"></i> 19.9K</div></div></a>
+            <a href="./dwldguide.html" class="post" alt="음원 다운로드 가이드"><img src="./b.png" alt="Post"><div class="overlay" style="font-weight: bold; gap: 10px;"><div>♥ 82M</div><div><i class="fa-solid fa-comment" style="color: #ffffff;"></i> 3.19K</div></div></a>
+            <a href="./mvstrm.html" class="post" alt="뮤비 스트리밍 가이드"><img src="./c.png" alt="Post"><div class="overlay" style="font-weight: bold; gap: 10px;"><div>♥ 43.7M</div><div><i class="fa-solid fa-comment" style="color: #ffffff;"></i> 79.4K</div></div></a>
+            <a href="./mvdwld.html" class="post" alt="뮤비 다운로드 가이드"><img src="./d.png" alt="Post"><div class="overlay" style="font-weight: bold; gap: 10px;"><div>♥ 40.7M</div><div><i class="fa-solid fa-comment" style="color: #ffffff;"></i> 74K</div></div></a>
+            <a href="./melgift.html" class="post" alt="멜론 선물하기 가이드"><img src="./e.png" alt="Post"><div class="overlay" style="font-weight: bold; gap: 10px;"><div>♥ 49.3M</div><div><i class="fa-solid fa-comment" style="color: #ffffff;"></i> 123K</div></div></a>
+            <a href="./strmhelp.html" class="post" alt="스트리밍 헬프 가이드"><img src="./f.png" alt="Post"><div class="overlay" style="font-weight: bold; gap: 10px;"><div>♥ 37.6M</div><div><i class="fa-solid fa-comment" style="color: #ffffff;"></i> 126.9K</div></div></a>
+            <a href="./idcreate.html" class="post" alt="아이디 생성 가이드"><img src="./g.png" alt="Post"><div class="overlay" style="font-weight: bold; gap: 10px;"><div>♥ 324M</div><div><i class="fa-solid fa-comment" style="color: #ffffff;"></i> 1.47K</div></div></a>
+            <a href="./voteguide.html" class="post" alt="음악방송 투표 가이드"><img src="./h.png" alt="Post"><div class="overlay" style="font-weight: bold; gap: 10px;"><div>♥ 327M</div><div><i class="fa-solid fa-comment" style="color: #ffffff;"></i> 5.34K</div></div></a>
+            <a href="./intstrm.html" class="post" alt="해외 스트리밍 가이드"><img src="./l.png" alt="Post"><div class="overlay" style="font-weight: bold; gap: 10px;"><div>♥ 330M</div><div><i class="fa-solid fa-comment" style="color: #ffffff;"></i> 1.59K</div></div></a>
+            <a href="./radiombc.html" class="post" alt="MBC 라디오 신청 가이드"><img src="./i.png" alt="Post"><div class="overlay" style="font-weight: bold; gap: 10px;"><div>♥ 401M</div><div><i class="fa-solid fa-comment" style="color: #ffffff;"></i> 2.01K</div></div></a>
+            <a href="./radiosbs.html" class="post" alt="SBS 라디오 신청 가이드"><img src="./j.png" alt="Post"><div class="overlay" style="font-weight: bold; gap: 10px;"><div>♥ 19M</div><div><i class="fa-solid fa-comment" style="color: #ffffff;"></i> 99K</div></div></a>
+            <a href="./radiokbs.html" class="post" alt="KBS 라디오 신청 가이드"><img src="./k.png" alt="Post"><div class="overlay" style="font-weight: bold; gap: 10px;"><div>♥ 407M</div><div><i class="fa-solid fa-comment" style="color: #ffffff;"></i> 18K</div></div></a>
         </div>
     </div>
     <footer><p style="font-size: x-small; margin-top: 30px;">&copy; 2025 MARKSTRMTEAM</p></footer>
