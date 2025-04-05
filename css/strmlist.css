@@ -1,0 +1,293 @@
+@media screen and (max-width: 500px) {
+    .mobile-container {
+        display: block;
+    }
+    .btn {
+        width: calc(100vw - 100px);
+    }
+    .center {
+        font-size: medium;
+    }
+    #guide {
+        width: calc(100%);
+    }
+}
+
+@media screen and (min-width: 500px) {
+    main {
+        margin: -1px 20px 20px 20px;
+    }
+    .btn {
+        margin: 10px 5px;
+    }
+    .mobile-container {
+        display: block;
+    }
+    #guide {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+    main {
+        margin: 20px;
+    }
+}
+
+html {
+    height: 100%;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+body {
+    height: 100%;
+    color: white;
+    background-color: #333;
+    background-size: cover;
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+.mobile-container {
+    max-width: 100%;
+    margin: auto;
+    color: white;
+    border-radius: 10px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+    display: block;
+}
+
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    transition: ease .3s;
+    background-color: #ddd;
+    color: black;
+}
+
+.active {
+    background-color: black;
+    color: white;
+}
+
+.nav-logo {
+    float: left;
+}
+
+.nav-logo img {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    width: 30px;
+    object-fit: cover;
+    margin-left: -25px;
+}
+
+.fa-solid {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#header-logo {
+    display: inline-block;
+    width: 60px;
+    object-fit: cover;
+    object-position: 0 20%;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.box {
+    margin: 10px auto 50px auto;   
+}
+
+.guide-top {
+    line-height: 1.8em;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.guide-text {
+    margin: 20px 0;
+}
+
+.guide-text ul {
+    display: inline-block;
+    text-align: left;
+    margin-left: 20px;
+}
+
+li {
+    display: list-item;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin: 5px;
+    width: 250px;
+}
+
+.btn-dark:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: #343a40;
+    transition: ease .3s;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: #0074bf;
+    transition: ease .5s;
+}
+
+.btn-dark {
+    background-color: #343a40;
+    border: 1px solid #343a40;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #0074bf;
+    border: 1px solid #0074bf;
+    color: white;
+}
+
+.melon .btn {
+    background-color: #00bf4c;
+    border: 1px solid #00bf4c;
+    color: white;
+}
+
+.melon .btn:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: #00bf4c;
+    transition: ease .5s;
+}
+
+.genie .btn {
+    background-color: #00b8f0;
+    border: 1px solid #00b8f0;
+    color: white;
+}
+
+.genie .btn:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: #00b8f0;
+    transition: ease .5s;
+}
+
+.bugs .btn {
+    background-color: #f07000;
+    border: 1px solid #f07000;
+    color: white;
+}
+
+.bugs .btn:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: #f07000;
+    transition: ease .5s;
+}
+
+.flo .btn {
+    background-color: #3f3aff;
+    border: 1px solid #3f3aff;
+    color: white;
+}
+
+.flo .btn:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: #3f3aff;
+    transition: ease .5s;
+}
+
+.vibe .btn {
+    background-color: #f60054;
+    border: 1px solid #f60054;
+    color: white;
+}
+
+.vibe .btn:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: #f60054;
+    transition: ease .5s;
+}
+
+.apple .btn {
+    background-color: #ff2546;
+    border: 1px solid #ff2546;
+    color: white;
+}
+
+.apple .btn:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: #ff2546;
+    transition: ease .5s;
+}
+
+.spotify .btn {
+    background-color: #009b12;
+    border: 1px solid #009b12;
+    color: white;
+}
+
+.spotify .btn:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: #009b12;
+    transition: ease .5s;
+}
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
