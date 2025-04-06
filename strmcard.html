@@ -48,26 +48,26 @@
     <script>
         var userAgent = navigator.userAgent.toLowerCase();
         console.log(userAgent);
-
+        // melonapp://streamingcard?cid=MARK1999
         $(document).ready(function() {
-            var linkto = "https://vo.la/KenbP";
+            var linkto = "";
             function gotolink(linkto) {
                 location.href = linkto;
             }
 
             if(userAgent.match('android')) {
                 console.log('android');
-                linkto = "https://vo.la/KenbP";
+                linkto = "";
                 gotolink(linkto);
             }
             else if(userAgent.match('iphone')){
                 console.log('iphone');
-                linkto = "https://vo.la/KenbP";
+                linkto = "";
                 gotolink(linkto);
             } 
             else if(userAgent.match('ipad')){
                 console.log('ipad');
-                linkto = "https://vo.la/KenbP";
+                linkto = "";
                 gotolink(linkto);
             }
             else {

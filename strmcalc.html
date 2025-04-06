@@ -209,20 +209,20 @@
         </a>
     </footer>
     <script>
-        const now = new Date();
-        const DD = now.getDate();
-        const HH = now.getHours();
-        const VariableA = (24 * (DD - 7) * 3600) + (HH * 3600) + 6 * 3600
-    
-        const VariableB = 3720;
-    
-        const VariableC = VariableA / VariableB;
-    
-        const title = VariableC * 4
+    const now = new Date();
+    const releaseTime = new Date("2025-04-07T18:00:00");
 
-        const Roundedtitle = Math.ceil(title);
+    const elapsedSeconds = Math.floor((now - releaseTime) / 1000);
 
-        document.getElementById("title").textContent = `${Roundedtitle}`;
+    const streamsPerHour = 4;
+    const intervalSeconds = 3600 / streamsPerHour;
+
+    let totalStreams = 0;
+    if (elapsedSeconds > 0) {
+        totalStreams = Math.floor(elapsedSeconds / intervalSeconds);
+    }
+
+    document.getElementById("title").textContent = totalStreams;
     </script>  
 </body>
 </html>
